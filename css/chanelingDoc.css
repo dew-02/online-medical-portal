@@ -1,0 +1,116 @@
+body {
+    background-image: url('../images/patientconfirmbg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: none;
+    width: 100%;
+    top: 20px;
+    left: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+.container {
+    max-width: 1200px;
+    margin: 30px auto 20px; /* Margin adjusted to account for the fixed header */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.profile-card {
+    background-color: #c2d8fa;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 1 1 calc(33.333% - 40px);
+    margin-bottom: 20px;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #004080;
+    margin-bottom: 15px;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h3 {
+    margin: 0 0 10px;
+    color: #004080;
+    font-size: 24px;
+}
+
+.profile-info p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.profile-info strong {
+    color: #004080;
+}
+
+.button-group {
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 750px;
+}
+
+button {
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 18px 80px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #003366;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}

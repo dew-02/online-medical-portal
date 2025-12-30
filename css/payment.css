@@ -1,0 +1,216 @@
+/* Reset some basic styles */
+body, h1, h2, form, label, input, button, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Main container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Payment container styling */
+.payment-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Payment form container */
+.payment-form-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 60%;
+    margin-right: 20px;
+}
+
+/* Header styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #007bff;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Input styling */
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Common button styling */
+button {
+    width: 30%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Cancel button styling */
+.cancel-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.cancel-button:hover {
+    background-color: #c82333;
+}
+
+/* Pay Now button styling */
+.pay-now-button {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.pay-now-button:hover {
+    background-color: #138496;
+}
+
+/* Come and Pay button styling */
+.come-and-pay-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.come-and-pay-button:hover {
+    background-color: #218838;
+}
+
+/* Bill summary styling */
+.bill-summary {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 35%;
+    margin-left: 20px;
+}
+
+/* Bill summary heading */
+.bill-summary h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+/* Bill summary list styling */
+.bill-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual bill items */
+.bill-summary li {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Charges styling */
+.charges {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Total prices styling */
+.totals {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .payment-container {
+        flex-direction: column;
+    }
+
+    .payment-form-container, .bill-summary {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Additional styles for better UI */
+input::placeholder {
+    color: #aaa;
+}
+
+button:active {
+    transform: scale(0.98);
+}

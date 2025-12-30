@@ -1,0 +1,54 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Font for the entire document */
+    line-height: 1.6; /* Line height for better readability */
+   /* background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text color */
+    background-image:url('../images/termnew.jpeg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Centered heading styles */
+h1 {
+    color: #191a1b; /* Darker color for the main title */
+    font-size: 2.5em; /* Size of the main title */
+    margin: 20px 0; 
+    font-size: larger;/* Spacing above and below the title */
+}
+
+/* Heading styles */
+h4 {
+    color: #191a1b; /* Dark color for subheadings */
+    margin-top: 20px; /* Spacing above subheadings */
+    margin-bottom: 10px;
+    font-size: larger; /* Spacing below subheadings */
+}
+
+
+h5 {
+    color: #191a1b; /* Same color for smaller headings */
+    margin-top: 10px;
+    font-size: medium; /* Spacing above */
+}
+
+/* Paragraph styles */
+p {
+    margin: 10px 0;
+    font-size: larger; /* Spacing for paragraphs */
+}
+
+/* Unordered list styles */
+ul {
+    margin: 10px 0; /* Margin around the list */
+    padding-left: 20px; 
+    font-size: medium;/* Indentation for list items */
+}
+
+/* Centering content */
+center {
+    display: block; /* Ensures center tag behaves properly */
+    margin: 20px 0; /* Margin for spacing above and below */
+}

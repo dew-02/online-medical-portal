@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('../images/patientconfirmbg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details h2 {
+    font-size: 1.2em;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.details-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.details-row div {
+    flex: 1;
+    min-width: 220px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.button-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.update-btn,
+.delete-btn,
+.confirm {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+}
+
+.update-btn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.update-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+.confirm {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
+}
+
+.confirm:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .details-row {
+        flex-direction: column;
+    }
+
+    .button-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-actions button {
+        margin-bottom: 10px;
+    }
+}
+
+/* Doctor Details Section */
+.doctor-details {
+    display: grid;
+    gap: 20px; /* Space between columns */
+}
+
+.doctor-details .form-group {
+    display: flex;
+    flex-direction: column; /* Stack label and input */
+}
+
+.doctor-details label {
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+.doctor-details select,
+.doctor-details input[type="date"] {
+    width: 100%; /* Full width */
+}
+
+/* Align Doctor Name and Booking Date in one line */
+.doctor-details .two-column {
+    display: flex;
+    justify-content: space-between; /* Space between two items */
+    align-items: center; /* Center vertically */
+}

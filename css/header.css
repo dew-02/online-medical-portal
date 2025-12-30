@@ -1,0 +1,125 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #0056b3; /* Deep blue background */
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+    border-radius: 8px;
+}
+
+nav ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.nav-links li {
+    margin: 0;
+}
+
+nav ul.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul.nav-links a:hover,
+nav ul.nav-links a.active {
+    background-color: #003d7a; /* Darker blue for hover and active states */
+    color: #e6f0ff; /* Light blue text on hover */
+}
+
+.auth-button {
+    display: flex;
+    align-items: center;
+    border-radius: 10px; /* Added corner radius */
+    padding: 10px; /* Padding inside the auth-button section */
+   
+}
+
+.auth-button .welcome-message {
+    margin-right: 10px; /* Space between welcome message and profile icon */
+    color: #fff; /* White color for the welcome message */
+    font-weight: 500; /* Bold for better visibility */
+}
+
+.auth-button .profile-logo {
+    text-decoration: none;
+    margin-right: 10px; /* Space between profile icon and logout button */
+}
+
+.auth-button .profile-icon {
+    font-size: 30px; /* Adjust the icon size */
+    color: #fff; /* White color for the icon */
+    transition: transform 0.3s ease; /* Transition for hover effect */
+}
+
+.auth-button .profile-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.auth-button a.btn-logout {
+    text-decoration: none;
+    color: #fff; /* White color for Logout button */
+    background-color: #28a745; /* No background color */
+    padding: 10px 15px; /* Padding for button */
+    border: 1px solid #fff; /* White border for the logout button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-button a.btn-logout:hover {
+    background-color: #ff3e3e; /* Darker blue on hover */
+}
+
+/* Login/Register Button Styles */
+.auth-button a.btn-login-register {
+    text-decoration: none;
+    color: #fff; /* White color for Login/Register button */
+    background-color: #28a745; /* Bright green background */
+    padding: 10px 20px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size */
+    font-weight: 500; /* Font weight */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+.auth-button a.btn-login-register:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}

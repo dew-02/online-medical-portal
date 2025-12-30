@@ -1,0 +1,180 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../images/adminbg.jpg');
+    background-size: cover;
+    background-position: center top;
+    color: #333; /* Dark text for readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full viewport height */
+}
+
+/* Container for the entire dashboard */
+.container {
+    flex: 1; /* Allow the container to grow */
+}
+
+/* Header styles */
+.admin-header {
+    width: 100%; /* Full width */
+    background: linear-gradient(135deg, #0056b3, #4a90e2); /* Gradient background for a modern look */
+    padding: 20px; /* Adjust padding for full height */
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow for depth */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Side padding */
+}
+
+.admin-header h1 {
+    font-size: 1.8em; /* Increased font size for the title */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Button styling */
+button {
+    cursor: pointer;
+}
+
+#logoutBtn {
+    background-color: #d9534f; /* Bootstrap danger color for logout */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#logoutBtn:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Main content styles */
+.admin-content {
+    padding: 20px;
+    background-color: white; /* White background for content area */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px; /* Spacing around the content area */
+    flex: 1; /* Allow the content to grow */
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+/* Dashboard section */
+#dashboard {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#dashboard h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#dashboard p {
+    font-size: 1.2em;
+}
+
+/* Button container */
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    gap: 20px; /* Space between buttons */
+    justify-content: center; /* Center buttons */
+}
+
+/* Menu button styles */
+.menu-button {
+    background-color: #5bc0de; /* Light blue button */
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Larger padding for buttons */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.menu-button:hover {
+    background-color: #31b0d5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer styles */
+.admin-footer {
+    position: fixed; /* Fix position at the bottom */
+    bottom: 0; /* Align to bottom */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    text-align: center;
+    font-size: 0.9em;
+    color: #666; /* Lighter color for footer */
+    background-color: #4a90e2; /* Match footer with header */
+    color: white; /* White text for footer */
+    padding: 10px 0; /* Padding for footer */
+}
+
+/* Add styles for the Add New Admin section */
+#add-admin {
+    width: 100%; /* Full width for the section */
+    max-width: 400px; /* Limit maximum width */
+    margin: 20px auto; /* Centered margin */
+    padding: 15px; /* Padding for internal spacing */
+    background-color: #f9f9f9; /* Light grey background for the form */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#add-admin h2 {
+    text-align: center; /* Center the header */
+    margin-bottom: 15px; /* Space below the header */
+    font-size: 1.5em; /* Font size for the header */
+}
+
+#add-admin label {
+    display: block; /* Labels on their own line */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold font for labels */
+}
+
+#add-admin input,
+#add-admin select {
+    width: calc(100% - 10px); /* Full width inputs with padding */
+    padding: 8px; /* Internal padding */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 0.9em; /* Slightly smaller font size for inputs */
+}
+
+#add-admin button[type="submit"] {
+    background-color: #5bc0de; /* Light blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 8px 12px; /* Internal padding */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    display: block; /* Center the button */
+    margin: 0 auto; /* Center the button horizontally */
+}
+
+#add-admin button[type="submit"]:hover {
+    background-color: #31b0d5; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}

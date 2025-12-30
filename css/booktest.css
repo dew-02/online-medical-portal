@@ -1,0 +1,158 @@
+/* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../images/patientconfirmbg.jpg');
+    background-size: cover;
+    background-position: center top;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.details {
+    margin-bottom: 20px;
+}
+
+.details h2 {
+    font-size: 1.2em; /* Decreased size */
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex; /* Align items in a row */
+}
+
+.form-group label {
+    flex: 1; /* Allow label to take up space */
+    margin-right: 10px; /* Space between label and input */
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 48%; /* Decreased size */
+    padding: 8px; /* Decreased padding */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px; /* Decreased font size */
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button-group button {
+    padding: 10px; /* Decreased padding */
+    border: none;
+    border-radius: 8px;
+    font-size: 14px; /* Decreased font size */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    flex: 1;
+    margin: 0 5px; /* Adjusted margin for spacing */
+}
+
+.button-group #submitBtn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.button-group #submitBtn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.button-group #backBtn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.button-group #backBtn:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+
+    .form-group {
+        flex-direction: column; /* Stack label and input on small screens */
+    }
+
+    .form-group label {
+        margin-right: 0; /* Reset margin on small screens */
+    }
+}
+
+/* Additional styling for better look */
+input,
+select {
+    font-family: inherit; /* Ensure consistent font */
+}
+
+/* Doctor Details Section */
+.doctor-details {
+    display: grid;
+    gap: 20px; /* Space between columns */
+}
+
+.doctor-details .form-group {
+    display: flex;
+    flex-direction: row; /* Two items in a row */
+    justify-content: space-between;
+}
+
+.doctor-details label {
+    margin-bottom: 0; /* Remove space for labels */
+    flex: 1; /* Allow label to take up space */
+}
+
+.doctor-details select,
+.doctor-details input[type="date"] {
+    width: 48%; /* Ensure items align */
+}
