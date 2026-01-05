@@ -196,12 +196,21 @@ uploads/ and profile_images/ writable
 ## 📸 **Screenshots**
 
 ![ss1](https://github.com/user-attachments/assets/cbf28c11-8336-4e72-9a75-92b915ee8f04)
+
+
 ![ss2](https://github.com/user-attachments/assets/5b098aac-0a27-4440-915a-680fdcf770e4)
+
+
 ![ss3](https://github.com/user-attachments/assets/741f355a-3214-49de-a5e8-190d5e29ff5c)
+
 ![ss4](https://github.com/user-attachments/assets/2f84a3cc-6017-414e-93b8-c6492bf094ab)
+
 ![ss5](https://github.com/user-attachments/assets/e30939b5-bd16-4e1d-8a76-6acf4bfa4032)
+
 ![ss6](https://github.com/user-attachments/assets/540221fa-49e3-4d39-bfd3-1fd4981e4ecd)
+
 ![ss7](https://github.com/user-attachments/assets/3561bf7c-33e4-4aea-87ca-54ab19db21b5)
+
 ![ss8](https://github.com/user-attachments/assets/7432b7de-493e-491d-8684-8eca0a116132)
 
 
