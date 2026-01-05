@@ -1,3 +1,4 @@
+
 # 🏥 **Online Medical Portal**
 
 **A comprehensive web-based medical portal system built with PHP, MySQL, HTML, CSS, and JavaScript.**  
@@ -213,6 +214,7 @@ uploads/ and profile_images/ writable
 
 ![ss8](https://github.com/user-attachments/assets/7432b7de-493e-491d-8684-8eca0a116132)
 
+![ss9](https://github.com/user-attachments/assets/6d968916-152d-4b1f-977f-6babc911fd8c)
 
 
 
